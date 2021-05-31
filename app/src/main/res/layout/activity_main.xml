@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.umbrella.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layautId"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pause"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:text="Restart"
+                android:textColor="#AE9D9D"
+                android:textSize="18sp"
+                app:backgroundTint="#FFFFFF"
+                app:iconTint="#FBFBFB" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

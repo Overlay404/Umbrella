@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9DC3D7"
+    android:foregroundGravity="top|left|right"
+    android:importantForAccessibility="noHideDescendants"
+    android:tag="0">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/umbrella_" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="541dp"
+        android:layout_height="840dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309"
+        app:srcCompat="@drawable/water" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="228dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="184dp"
+        android:background="#0F4A71BF"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Umbrella"
+        android:textAllCaps="false"
+        android:textColor="#FAFAFA"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/play"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="127dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="256dp"
+        android:insetTop="0pt"
+        android:insetBottom="0pt"
+        android:text="GO!"
+        android:textColor="#FAFAFA"
+        android:textColorLink="#143C43"
+        android:typeface="monospace"
+        app:backgroundTint="#B9928ADF"
+        app:backgroundTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/custom"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="208dp"
+        android:text="custom"
+        android:textColor="#FAFAFA"
+        app:backgroundTint="#429FD1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
