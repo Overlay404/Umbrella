@@ -20,11 +20,13 @@ public class MainMenu extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         LinearLayout li = (LinearLayout)findViewById(R.id.layautId);
 
+        li.setBackgroundColor(Color.rgb(157, 195, 215));
+
         if (Custom.grey) {
             li.setBackgroundColor(Color.rgb(150, 151, 147));
         } else if (Custom.black) {
             li.setBackgroundColor(Color.BLACK);
-        } else{
+        } else if(Custom.blue){
             li.setBackgroundColor(Color.rgb(157, 195, 215));
         }
 
@@ -36,24 +38,17 @@ public class MainMenu extends AppCompatActivity{
         Button res;
 
         res = findViewById(R.id.button);
-        Button but_2 = (Button) findViewById(R.id.button2);
+        
 
-        but_2.setVisibility(View.GONE);
 
-        if (GameView.check){
-            but_2.setVisibility(View.VISIBLE);
 
-        }
 
         res.setOnClickListener(v -> {
             Intent intent = new Intent(MainMenu.this, Pause.class);
             startActivity(intent);
 
         });
-        but_2.setOnClickListener(v -> {
-            GameView.gameRunning = true;
 
-        });
 
 
 

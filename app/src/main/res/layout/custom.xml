@@ -7,40 +7,29 @@
     android:layout_height="match_parent"
     android:background="#9DC3D7">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="483dp"
-        android:layout_height="820dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404"
-        app:srcCompat="@drawable/water" />
-
     <Button
         android:id="@+id/person_1"
         android:layout_width="120dp"
         android:layout_height="156dp"
-        android:layout_marginEnd="216dp"
-        android:layout_marginRight="216dp"
-        android:layout_marginBottom="256dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        android:layout_marginBottom="188dp"
         android:background="@drawable/umbrella"
         android:foreground="@drawable/umbrella"
         app:backgroundTint="#FFD1D1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/person_2"
         android:layout_width="120dp"
         android:layout_height="156dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:layout_marginBottom="256dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="188dp"
         android:background="@drawable/umbrella_2"
         android:foreground="@drawable/umbrella_2"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView

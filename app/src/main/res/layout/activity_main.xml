@@ -27,16 +27,7 @@
                 android:background="@drawable/pause"
                 app:backgroundTint="#FFFFFF" />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="138dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="220dp"
-                android:text="Restart"
-                android:textColor="#AE9D9D"
-                android:textSize="18sp"
-                app:backgroundTint="#FFFFFF"
-                app:iconTint="#FBFBFB" />
+
         </LinearLayout>
     </LinearLayout>
 

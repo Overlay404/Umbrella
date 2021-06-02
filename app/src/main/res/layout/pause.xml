@@ -6,27 +6,16 @@
     android:layout_height="match_parent"
     android:background="#9DC3D7">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="579dp"
-        android:layout_height="853dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/water" />
-
     <Button
         android:id="@+id/back1"
         android:layout_width="62dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="704dp"
+        android:layout_marginBottom="752dp"
         android:background="@drawable/back"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button

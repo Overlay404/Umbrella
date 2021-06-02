@@ -23,7 +23,7 @@ public class GameView extends SurfaceView implements Runnable {
     public static int maxY = 28; // размер по вертикали
     public static float unitW = 0; // пикселей в юните по горизонтали
     public static float unitH = 0; // пикселей в юните по вертикали
-    public static boolean check;
+
     private boolean firstTime = true;
     public static boolean gameRunning = true;
     private Umbrella umbrella;
@@ -102,9 +102,12 @@ public class GameView extends SurfaceView implements Runnable {
         contentValues.put(DataBase.KEY_INT, 0);
 
         bd.insert(DataBase.TABLE_CONTACTS, null, contentValues);
+        try {
+            record = bd.rawQuery("SELECT REC FROM record ORDER BY REC DESC LIMIT 1", null);
+            record.moveToFirst();
+        }catch (Exception e){
 
-       record = bd.rawQuery("SELECT REC FROM record ORDER BY REC DESC LIMIT 1", null);
-       record.moveToFirst();
+        }
     }
 
     private void update() {
@@ -135,13 +138,13 @@ public class GameView extends SurfaceView implements Runnable {
 
             canvas = surfaceHolder.lockCanvas(); // закрываем canvas
 
-
+            canvas.drawColor(Color.rgb(157, 195, 215)); // заполняем фон
 
             if (Custom.grey) {
                 canvas.drawColor(Color.rgb(150, 151, 147)); // заполняем фон
             } else if (Custom.black) {
                 canvas.drawColor(Color.BLACK); // заполняем фон
-            } else {
+            } else if(Custom.blue) {
                 canvas.drawColor(Color.rgb(157, 195, 215)); // заполняем фон
 
             }
@@ -169,8 +172,13 @@ public class GameView extends SurfaceView implements Runnable {
                 canvas.drawText("Record: " + record.getString(0), 380 , 70, paint);
             }
 
-            if (gameRunning) {
-                canvas.drawText("Record: " + record.getString(0),   600, 70, paint);
+            try {
+                if (gameRunning) {
+                    canvas.drawText("Record: " + record.getString(0), 600, 70, paint);
+                }
+
+            }catch (Exception e){
+
             }
 
             surfaceHolder.unlockCanvasAndPost(canvas); // открываем canvas
@@ -205,7 +213,7 @@ public class GameView extends SurfaceView implements Runnable {
                 }
                 gameRunning = false; // останавливаем игру
                 draw();
-                check = true;
+
 
 
             }
@@ -214,7 +222,7 @@ public class GameView extends SurfaceView implements Runnable {
                 // игрок проиграл
                 gameRunning = false; // останавливаем игру
                 draw();
-                check = true;
+
 
 
             }

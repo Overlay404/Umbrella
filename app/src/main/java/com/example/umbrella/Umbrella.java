@@ -6,9 +6,10 @@ import android.database.sqlite.SQLiteDatabase;
 public class Umbrella extends SpaceBody {
 
     public Umbrella(Context context) {
+        bitmapId = R.drawable.umbrella;
         if (Custom.person2) {
             bitmapId = R.drawable.umbrella_2; // определяем начальные параметры
-        }else {
+        }else if(Custom.person){
                 bitmapId = R.drawable.umbrella;
         }
         sizeW = 3;
