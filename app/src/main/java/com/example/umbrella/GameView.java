@@ -12,9 +12,7 @@ import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
-import android.view.SurfaceView;
-
-import java.security.PublicKey;
+import android.view.SurfaceView;;
 import java.util.ArrayList;
 import java.util.Random;
 
